@@ -1,0 +1,23 @@
+/**
+ * @基于 https://github.com/shwenzhang/AndResGuard
+ * @Date 2019/10/24 20:48
+
+ * @param keepRoot 是否只混淆资源名称
+ * @param fixedResName 全局的资源名称
+ * @param mappingFile 映射配置文件，默认关，请删除$启用
+ * @param whiteList 资源名白名单 R.xxx.xxx，支持通配符*和?
+ * @param compressFilePattern 压缩时优化指定文件类型
+ */
+
+{
+  "keepRoot": false,
+  "fixedResName": "_",
+  "mappingFile": "$resource_mapping.txt",
+  "whiteList": [],
+  "compressFilePattern": [
+    "*.png",
+    "*.jpg",
+    "*.jpeg",
+    "*.gif"
+  ]
+}

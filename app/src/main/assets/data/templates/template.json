@@ -1,0 +1,281 @@
+{
+  "category": [
+    {
+      "icon": "as.png",
+      "title": "Android Project",
+      "templates": [
+        {
+          "icon": "app.png",
+          "title": "New Android App",
+          "describes": "Empty Project",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "gradle/gradleApp.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        },
+        
+        {
+          "icon": "app.png",
+          "title": "New Basic App",
+          "describes": "Basic Project",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "common/basicApp.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/ui/activity/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        },
+        
+        {
+          "icon": "appcompat.png",
+          "title": "New AppCompat App",
+          "describes": "AppCompatProject",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "common/appcompat.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        },
+        {
+          "icon": "androidx.png",
+          "title": "New AndroidX App",
+          "describes": "AndroidXProject",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "common/androidx.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "icon": "ic_launcher_ads.png",
+      "title": "Android AdMob",
+      "templates": [
+        {
+          "icon": "ic_launcher_ads.png",
+          "title": "AppCompat AdMob",
+          "describes": "Gradle/Android SDK/Java/XML",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "common/appcompat_admob.zip",
+              "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        },
+        {
+          "icon": "ic_launcher_ads.png",
+          "title": "AndroidX AdMob",
+          "describes": "Gradle/Android SDK/Java/XML",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "common/androidx_admob.zip",
+              "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "icon": "ic_launcher_firebase.png",
+      "title": "Android Firebase",
+      "templates": [
+        {
+          "icon": "ic_launcher_firebase.png",
+          "title": "AppCompat Firebase",
+          "describes": "Gradle/Android SDK/Java/XML",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "common/appcompat_firebase.zip",
+               "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        },
+        {
+          "icon": "ic_launcher_firebase.png",
+          "title": "AndroidX Firebase",
+          "describes": "Gradle/Android SDK/Java/XML",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "common/androidx_firebase.zip",
+               "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "icon": "gradle.png",
+      "title": "Android Gradle Project",
+      "templates": [
+        
+        {
+          "icon": "appcompat.png",
+          "title": "New AppCompat App",
+          "describes": "AppCompat Project",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "gradle/appcompat.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        },
+        {
+          "icon": "androidx.png",
+          "title": "New AndroidX App",
+          "describes": "AndroidX Project",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "gradle/androidx.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        },
+        {
+          "icon": "native.png",
+          "title": "New NativeAndroid App",
+          "describes": "Android C/C++/Java",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "gradle/nativeApp.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.cpp",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/cpp/native-lib.cpp"
+            ]
+          }
+        },
+        {
+          "icon": "kotlin.png",
+          "title": "New KotlinAndroid App",
+          "describes": "Android Kotlin",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "gradle/kotlinAndroid.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.kt",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.kt",
+              "src/main/res/layout/activity_main.xml"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

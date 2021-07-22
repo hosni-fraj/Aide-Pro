@@ -1,0 +1,172 @@
+v3.2(110)
+v3.2(100)
+Added Assets Manager Activity (Still in development)
+Full English
+Adjust some features
+
+v2.6.41(20201206)
+Fix known bugs
+Add a basic template
+Adjusted toast
+
+v2.6.4 (20201130)
+Try to use the transparent floating window to keep the program service alive and not be returned
+Delete AIDESamples.zip, 50m -> 38m
+
+v2.6.33 (20201122)
+Replace command output information box
+
+v2.6.3 (20201106)
+Upgrade the gradle function, add build, assembleDebug, assembleRelease commands
+
+v2.6.2 (20201020)
+Adjust the template
+Optimize compilation popup
+File browser supports displaying project icons
+
+v2.6 (20201007)
+Integrate Gradle compilation
+Code completion box supports viewing api version
+
+v2.5.5 (20201004)
+Fix several bugs
+Billion adjustments
+
+V2.5.4 (20200829)
+Fix several bugs
+Added a few bugs
+
+V2.5.3 (20200828)
+Fix low system version dex merge bug
+Re-add the AppCompat template
+
+V2.5.2 (20200827)
+Fix dex merge bug
+
+V2.5 (20200826)
+{
+  "Add": [
+    "Dex subcontracting repair function"
+  ],
+  "Adjustment": [
+    "Update Icon Library",
+    "Adjust the Tab key, no need to delete 4 consecutive times",
+    "Optimize file creation, support the creation of multi-level directories a/b/c/d.java",
+    "Enable to be forced by the system to night in bright theme mode"
+    "Optimized the viewing of code completion documents"
+    "UI Beautification"
+  ],
+  "repair":[
+  "When AndroidManifest.xml exists in the parent directory, the problem of creating project items is not displayed (only effective when the parent directory is an internal storage directory)"
+  ]
+  "Template": [
+    "Delete AppCompat template"
+  ],
+  "Translation": [
+    "Remove the Yandex translation and use the new interface",
+    "Remove the res string translation function",
+    "Optimize translation request logic"
+  ]
+}
+
+v2.4.9 (20200613);
+{
+  "Repair": [
+    "The highlight index of the opened file is invalid",
+    "The length of the view2java array is inconsistent causing a crash",
+    "Fixed that the is stream of commonly used code files is closed, resulting in failure to display later"
+  ]
+}
+
+v2.4.8 (20200611)
+{
+  "Adjustment": [
+    "Chinese completion is turned off by default",
+    "Adjust settings and classify functions",
+    "Adjust File Sorting",
+    "Xiao Xiao adapted the night mode",
+    "Replace android.jar to r"
+  ],
+  "Repair": [
+    "Fix ActionBar bug",
+    "Fix the bug that still displays when the dialog input method is closed (except in a few scenarios)",
+    "Fix the bug that sometimes clicks on the item does not respond"
+  ],
+  "Add": [
+    "Add two new types.. (service and broadcast receiver)"
+  ]
+}
+
+v2.4.6 (20200522)
+File browser pull down to refresh
+Advanced settings and settings merge
+The file browser folder can display the application small sign
+
+v2.4.3 (20200519)
+Fix crash when clicking on the notification bar
+Fix the bug that SplitView can still slide up after enabling the side sliding bar
+Optimize the edit box dialog box, intelligently select the content before the decimal point of the file name suffix
+Add custom Gradle completion
+
+v2.4 (20200516)
+Support custom project path
+Adapt to adaptive icons & shortcuts (android8.0+)
+Optimize the horizontal screen state
+Known bug fixes
+
+v2.3.6 (20200426)
+Support English
+
+v2.3.5 (20200424)
+UI adjustment
+
+v2.3.2 (20200405)
+Chinese ui designer (open to advanced settings)
+
+v2.3 (20200116)
+Override "Add to project..." and "Add new class..."
+File browser supports displaying pictures and installing apk
+
+v2.0 (20191216)
+Too lazy to talk
+(20201206 supplement)
+Modify the sliding file browser
+Add indigo theme
+Only supports 5.0+
+Remove some feature options
+Can't remember
+
+v1.6.0 (20191111)
+Added StringFog function
+Added AppCompat and AndroidX project mutual conversion function (menu bar-more-more)
+Custom edit box shortcut symbols support to distinguish between java and xml
+Long press to select a paragraph of text, you can select translation in the menu bar
+Localized part of the code error prompt
+Optimize translation word segmentation logic
+Some function adjustments, bug fixes
+
+v1.5.0 (20191025)
+Added res resource obfuscation function
+Add icon center
+Code highlighting supports configuring more parameters
+Migrate to AIDE 3.2.191010
+
+v1.2.3 (20191018)
+Fix findVewId problem
+Fix the problem of translation failure return code
+Fix the background color of the edit box after switching to the tutorial mode under the dark theme
+Add a project template
+Added the option to set the maximum number of rows displayed in search results
+Optimize the color picker
+Code highlighting supports modifying the color of line numbers
+
+v1.2.1 (20191003)
+Mainly fix some bugs
+Added the option of whether to display a dialog box when the file is not opened
+
+v1.2 (20191002)
+Added automatic translation of code complement
+Added redefine the apk build path
+
+Before v1.1
+Lost... _(:з」∠)_

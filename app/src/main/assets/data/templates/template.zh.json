@@ -1,0 +1,184 @@
+{
+  "category": [
+    {
+      "icon": "as.png",
+      "title": "Android 项目",
+      "templates": [
+        {
+          "icon": "app.png",
+          "title": "新建 Android App",
+          "describes": "空白项目",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "gradle/gradleApp.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        },
+        {
+          "icon": "app.png",
+          "title": "新建 Android App",
+          "describes": "基本项目",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "common/basicApp.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/ui/activity/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        },
+        
+        {
+          "icon": "app.png",
+          "title": "新建 AppCompat App",
+          "describes": "AppCompat项目",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "common/appcompat.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        },
+        {
+          "icon": "app.png",
+          "title": "新建 AndroidX App",
+          "describes": "AndroidX项目",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "common/androidx.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "icon": "as.png",
+      "title": "Android Gradle 项目",
+      "templates": [
+        {
+          "icon": "app.png",
+          "title": "新建 AppCompat App",
+          "describes": "AppCompat 项目",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "gradle/appcompat.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        },
+        {
+          "icon": "app.png",
+          "title": "新建 AndroidX App",
+          "describes": "AndroidX 项目",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "gradle/androidx.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/AndroidManifest.xml",
+              "build.gradle"
+            ]
+          }
+        },
+       
+        {
+          "icon": "app.png",
+          "title": "新建 NativeAndroid App",
+          "describes": "Android C/C++/Java",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "gradle/nativeApp.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.java",
+              ".*.cpp",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.java",
+              "src/main/res/layout/activity_main.xml",
+              "src/main/cpp/native-lib.cpp"
+            ]
+          }
+        },
+        {
+          "icon": "kotlin.png",
+          "title": "新建 KotlinAndroid App",
+          "describes": "Android Kotlin",
+          "project": {
+            "type": "android",
+            "main": "app",
+            "template": "gradle/kotlinAndroid.zip",
+            "replaces": [
+              ".*.xml",
+              ".*.kt",
+              ".*.gradle"
+            ],
+            "openFile": [
+              "src/main/java/$package_name$/MainActivity.kt",
+              "src/main/res/layout/activity_main.xml"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,321 @@
+<menu>
+    <menu format=".*AndroidManifest.xml">
+        <item title="添加写入SD卡权限">
+
+            &lt;!--写入/删除您的SD卡中的内容--&gt;
+            &lt;uses-permission android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot;/&gt;
+
+        </item>
+    </menu>
+    <menu format=".*.java">
+        <menu title="常用代码…">
+            <item title="for">
+
+                for (int i = 0; i &lt; 0; i++) {
+
+                }
+
+            </item>
+            <menu title="实用代码">
+                <item title="延迟执行">
+
+                    new Handler().postDelayed(new Runnable(){
+
+                    @Override
+                    public void run() {
+
+                    }
+                    }, 1000);
+
+                </item>
+                <item title="Toast">
+
+                    Toast.makeText(getApplication(), "", Toast.LENGTH_SHORT).show();
+
+                </item>
+                <item title="新活动">
+
+                    startActivity(new Intent(this, Object.class));
+
+                </item>
+            </menu>
+            <menu title="活动…">
+                <item title="线程更新界面">
+
+                    runOnUiThread(new Runnable(){
+
+                    @Override
+                    public void run() {
+
+                    }
+          			});
+
+                </item>
+                <item title="双击返回键退出">
+                    private long firstBackTime;
+                    @Override
+                    public void onBackPressed() {
+                    if (System.currentTimeMillis() - firstBackTime > 2000) {
+                    Toast.makeText(this, "再按一次返回键退出程序", Toast.LENGTH_SHORT).show();
+                    firstBackTime = System.currentTimeMillis();
+                    return;
+                    }
+
+                    super.onBackPressed();
+                    }
+
+                </item>
+            </menu>
+            <menu title="对话框">
+                <item title="普通对话框">
+
+                    AlertDialog dialog = new AlertDialog.Builder(this)
+                    .setTitle("标题")
+                    .setMessage("内容")
+                    .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dia, int which) {
+
+                    }
+                    })
+                    .setNegativeButton("取消", null)
+                    .create();
+                    dialog.show();
+
+                </item>
+                <item title="列表对话框">
+
+                    CharSequence[] items = {""};
+                    AlertDialog dialog = new AlertDialog.Builder(this)
+                    .setTitle("标题")
+                    .setItems(items, new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dia, int which) {
+
+                    }
+                    })
+                    .setPositiveButton("确定", null)
+                    .setNegativeButton("取消", null)
+                    .create();
+                    dialog.show();
+
+                </item>
+                <item title="多选对话框">
+
+                    CharSequence[] items={};
+                    boolean[] checkedItems = {};
+                    AlertDialog dialog = new AlertDialog.Builder(this)
+                    .setTitle("标题")
+                    .setMultiChoiceItems(items, checkedItems, new DialogInterface.OnMultiChoiceClickListener(){
+
+                    @Override
+                    public void onClick(DialogInterface dia, int which, boolean isChecked) {
+
+                    }
+                    })
+                    .setPositiveButton("确定", null)
+                    .setNegativeButton("取消", null)
+                    .create();
+                    dialog.show();
+
+                </item>
+                <item title="单选对话框">
+
+                    CharSequence[] items = {};
+                    AlertDialog dialog = new AlertDialog.Builder(this)
+                    .setTitle("标题")
+                    .setSingleChoiceItems(items, -1, new DialogInterface.OnClickListener() {
+
+                    @Override
+                    public void onClick(DialogInterface dia, int which) {
+
+                    }
+                    })
+                    .create();
+                    dialog.show();
+
+                </item>
+                <menu title="对话框事件">
+                    <item title="点击事件">
+
+                        new DialogInterface.OnClickListener() {
+
+                        @Override
+                        public void onClick(DialogInterface dia, int which) {
+
+                        }
+                        }
+
+                    </item>
+                    <item title="取消事件">
+
+                        .setOnCancelListener(new DialogInterface.OnCancelListener(){
+
+                        @Override
+                        public void onCancel(DialogInterface dia) {
+
+                        }
+                        });
+
+                    </item>
+                    <item title="销毁事件">
+
+                        .setOnDismissListener(new DialogInterface.OnDismissListener(){
+
+                        @Override
+                        public void onDismiss(DialogInterface dia) {
+
+                        }
+                        });
+
+                    </item>
+                    <item title="按键事件">
+
+                        .setOnKeyListener(new DialogInterface.OnKeyListener(){
+
+                        @Override
+                        public boolean onKey(DialogInterface dia, int keyCode, KeyEvent event) {
+                        //监听单击返回键
+                        if (keyCode == KeyEvent.KEYCODE_BACK 
+                        &amp;&amp; event.getAction() == KeyEvent.ACTION_DOWN) {
+
+                        return true;
+                        }
+                        return false;
+                        }
+                        });
+
+                    </item>
+                    <item title="显示事件">
+
+                        .setOnShowListener(new DialogInterface.OnShowListener(){
+
+                        @Override
+                        public void onShow(DialogInterface dia) {
+
+                        }
+                        });
+
+                    </item>
+                </menu>
+            </menu>
+            <menu title="控件事件">
+                <menu title="通用">
+                    <item title="点击事件">
+
+                        .setOnClickListener(new View.OnClickListener() {
+
+                        @Override
+                        public void onClick(View view) {
+
+                        }
+                        });
+
+                    </item>
+                    <item title="长按事件">
+
+                        .setOnLongClickListener(new View.OnLongClickListener() {
+
+                        @Override
+                        public boolean onLongClick(View view) {
+
+                        return false;
+                        }
+                        });
+
+                    </item>
+                    <item title="触摸事件">
+
+                        .setOnTouchListener(new View.OnTouchListener(){
+
+                        @Override
+                        public boolean onTouch(View view, MotionEvent event) {
+                        int action = event.getAction();
+                        if (action == MotionEvent.ACTION_DOWN) {
+                        //点击
+                        } else if (action == MotionEvent.ACTION_UP) {
+                        //松开  
+                        } else if (action == MotionEvent.ACTION_MOVE) {
+                        //移动
+                        }
+                        return true;
+                        }
+                        });
+
+                    </item>
+                </menu>
+                <menu title="编辑框">
+                    <item title="获取输入内容">
+
+                        .getText().toString()
+
+                    </item>
+                    <item title="内容监听事件">
+
+                        .addTextChangedListener(new TextWatcher(){
+
+                        @Override
+                        public void beforeTextChanged(CharSequence s, int start,int count, int after) {
+
+                        }
+
+                        @Override
+                        public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+                        }
+
+                        @Override
+                        public void afterTextChanged(Editable s) {
+
+                        }
+                        });
+
+                    </item>
+                </menu>
+                <menu title="列表">
+                    <item title="列表点击事件">
+
+                        .setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+                        @Override
+                        public void onItemClick(AdapterView&lt;?&gt; parent, View view, int position, long itemId) {
+
+                        }
+                        });
+
+                    </item>
+                    <item title="列表长按事件">
+
+                        .setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+
+                        @Override
+                        public boolean onItemLongClick(AdapterView&lt;?&gt; parent, View view, int position, long itemId) {
+
+                        return false;
+                        }
+                        });
+
+                    </item>
+                    <item title="列表选择事件">
+
+                        .setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+
+                        @Override
+                        public void onItemSelected(AdapterView&lt;?&gt; parent, View view, int position, long itemId) {
+
+                        }
+
+                        @Override
+                        public void onNothingSelected(AdapterView&lt;?&gt; parent) {
+
+                        }
+                        });
+
+                    </item>
+                </menu>
+            </menu>
+        </menu>
+    </menu>
+</menu>
