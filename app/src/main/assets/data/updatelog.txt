@@ -1,4 +1,9 @@
 v3.2(110)
+Assets Manager %80
+Improve + added Tamplates
+Added some Quick Codes
+Added an option to select an activity template
+
 v3.2(100)
 Added Assets Manager Activity (Still in development)
 Full English
