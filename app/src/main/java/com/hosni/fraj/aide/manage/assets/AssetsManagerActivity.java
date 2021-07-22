@@ -72,7 +72,7 @@ public class AssetsManagerActivity extends BaseActivity implements OnItemClickLi
 			base_list.setVisibility(View.GONE);
 		} else {
 			txt.setText("No File Found! \n You can create / import file by clicking the menu icon.");
-			FileUtil.listDir(ProjectUtils.getCurrentProject().toString() + "/src/main/assets/", file_list);
+			FileUtil.listDir(ProjectUtils.getCurrentProject().toString() + "/src/main/assets/" /* Current Project Path */, file_list);
 			
 			int postion = 0;
 
