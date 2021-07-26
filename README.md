@@ -24,7 +24,7 @@ You should
 read [these](https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/)
 guidelines, or that summarized:
 
-- Short and detailed
+- Short and detailed ( otherwise it will be deleted )
 - Prefix one of these commit types:
    - `feat:` A feature, possibly improving something already existing
    - `fix:` A fix, for example of a bug
