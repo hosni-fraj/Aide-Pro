@@ -17,7 +17,7 @@ class AideMainActivity$100000010 implements OnMenuItemClickListener {
     @Override
     public boolean onMenuItemClick(MenuItem menuItem) {
         ConverProject.showDialog(this.val$activity, this.val$currentProject);
-        return false;
+        return true;
     }
 
     AideMainActivity$100000010(AideMainActivity aideMainActivity, Activity activity, File file) {
@@ -29,4 +29,4 @@ class AideMainActivity$100000010 implements OnMenuItemClickListener {
     static AideMainActivity access$0(AideMainActivity$100000010 aideMainActivity$100000010) {
         return aideMainActivity$100000010.this$0;
     }
-}
+	}
