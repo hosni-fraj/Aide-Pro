@@ -26,15 +26,28 @@ public class ProjectUtils {
     public static final String MANIFEST_TARGET_SDK_VERSION = "android:targetSdkVersion";
     public static final String MANIFEST_VERSION_CODE = "android:versionCode";
     public static final String MANIFEST_VERSION_NAME = "android:versionName";
-
+	
+	
+	/* 
+	* Path of the current project, if there is not opened project it
+	* it will @return with 'null'
+	*/
     public static File currentProject() {
         return getCurrentProject();
     }
-
+	
+	/*
+	* @file currentProject
+	* return AndroidManifest.xml full path 
+	*/
     public static File getAndroidManifest(File file) {
         return getMain(file, "AndroidManifest.xml");
     }
-
+	
+	/*
+	* @file Current Project
+	* @return (Drawable) current project' app icon from manifest 
+	*/
     public static Drawable getAppIconFromManifest(File file) {
         Resources resources = null;//App.getApp().getResources();
         if (!file.exists() || !file.isFile()) {
@@ -78,7 +91,7 @@ public class ProjectUtils {
         }
         return (Drawable) null;
     }
-
+	
     public static String getAppIconFromRes(File file, String str, String str2) {
         System.out.println(str);
         File[] listFiles = null; //file.listFiles(new 100000000(str));
@@ -171,7 +184,10 @@ public class ProjectUtils {
         }
 		return null;
 	}
-
+	
+	/* 
+	* @return Projects Path
+	*/
     public static File getAppProjects() {
         String string = Utils.getSp().getString("project_home", getDefaultAppProjects().getAbsolutePath());
         if (string == null || !string.startsWith("/")) {
@@ -260,7 +276,7 @@ public class ProjectUtils {
     public static File getMain(File file, String str) {
         return newFile(getMain(file), str);
     }
-
+    
     public static String getManifestAttributeValueByName(File file, String str, String str2) {
         XmlPullParser newPullParser = null;//XmlPullParserFactory.newInstance().newPullParser();
       //  newPullParser.setInput(new FileInputStream(file), "utf-8");
@@ -291,7 +307,7 @@ public class ProjectUtils {
             }
            // newPullParser.next();
         }
-        return (String) null;
+        
     }
 
     public static String getManifestValue(File file, String str) {
